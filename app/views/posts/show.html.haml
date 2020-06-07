@@ -1,0 +1,11 @@
+= render 'header'
+.main_contents
+  = image_tag "#{@post.image}"
+  .main_contents_data
+    .main_contents_data_name
+      ゆうや
+    .main_contents_data_place
+      = @post.place
+  .main_contents_text
+    = simple_format(@post.text)
+= render 'footer'

@@ -3,13 +3,21 @@
 }
 
 @mixin new_data {
-  width: 50%;
-  margin: 10px;
+  width: 80%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+@mixin form {
+  width: 100%;
+  padding: 5px;
+  resize: none;
+  border: none;
 }
 
 .new_posts {
   margin:0 200px;
-  height: 508px;
+  height: 538px;
   border: solid 1px orange;
   &_title {
     font-weight: bold;
@@ -19,26 +27,27 @@
     color: white;
   }
   &_data {
-    display: flex;
     height: 80%;
     &_image {
       @include new_data;
-      &_icon {
-        padding: 40px;
-        text-align: center;
+      input {
+        @include form;
+        height: 50px;
       }
     }
     &_text {
       @include new_data;
       textarea{
-        width: 100%;
-        height: 80%;
-        padding: 5px;
-        resize: none;
-        border: none;
+        @include form;
+        height: 300px;
       }
-      &_place {
-        height: 20%;
+    }
+    &_place {
+      @include new_data;
+      height: 20%;
+      textarea{
+        @include form;
+        height: 50px;
       }
     }
   }

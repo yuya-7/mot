@@ -1,7 +1,8 @@
 = render 'header'
 - @posts.each do |post|
   .main_contents
-    = image_tag "#{post.image}"
+    = link_to "/posts/#{post.id}", method: :get do
+      = image_tag "#{post.image}"
     .main_contents_data
       .main_contents_data_name
         ゆうや
