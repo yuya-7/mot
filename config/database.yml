@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: mot_production
-  username: mot
-  password: <%= ENV['MOT_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
