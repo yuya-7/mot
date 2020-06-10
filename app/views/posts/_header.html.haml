@@ -5,7 +5,7 @@
         Mott
     .main_header_box_right
       - if user_signed_in?
-        = link_to user_session_path do
+        = link_to "/users/#{current_user.id}" do
           = fa_icon 'user', class: 'head_left_icon'
         = link_to new_post_path do
           = fa_icon 'edit', class: 'head_right_icon'
