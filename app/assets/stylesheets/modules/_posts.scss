@@ -55,12 +55,14 @@
     text-align: center;
     height: 56px;
     padding: 10px;
-    a {
+    input {
       color: black;
       background-color: orange;
       height: 100%;
-      border-radius: 1em;
       font-size: x-large;
+      border: none;
+      cursor: pointer;
+      border: solid 1px gray;
     }
   }
 }
