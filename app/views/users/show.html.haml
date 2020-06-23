@@ -1,4 +1,4 @@
-= render 'posts/header'
+= render 'users/header'
 - @posts.each do |post|
   .main_contents
     = link_to "/posts/#{post.id}", method: :get do
