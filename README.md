@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Mott
 
-Things you may want to cover:
+### 概要
+これは画像投稿アプリです
 
-* Ruby version
+### 本番環境
+デプロイ( heroku )
+https://mott-y.herokuapp.com/
 
-* System dependencies
+テストアカウント
+メールアドレス aaa@gmail.com
+パスワード    12345678
 
-* Configuration
+### 制作背景
+旅の写真投稿に特化したアプリを作りたかったので作りました。
 
-* Database creation
+### 工夫
+写真が一番大きく見えるようにフロントを作成しました。
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### 今後の実装予定
+検索、削除、編集機能
