@@ -18,6 +18,7 @@ class PostsController < ApplicationController
   def destroy
     post = Post.find(params[:id])
     post.destroy
+    redirect_to root_path
   end
 
   def edit
@@ -26,6 +27,7 @@ class PostsController < ApplicationController
   def update
     post = Post.find(params[:id])
     post.update(post_params)
+    redirect_to root_path
   end
 
   def show

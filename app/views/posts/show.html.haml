@@ -8,4 +8,10 @@
       = @post.place
   .main_contents_text
     = simple_format(@post.text)
+- if user_signed_in? && current_user.id == @post.user.id
+  .show
+    .show_edit
+      = link_to "編集", edit_post_path(params[:id])
+    .show_delete
+      = link_to "削除", post_path(@post), method: :delete
 = render 'footer'
